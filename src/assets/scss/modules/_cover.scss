@@ -1,0 +1,16 @@
+.cover {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // 垂直居中定位容器
+  .profile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+}

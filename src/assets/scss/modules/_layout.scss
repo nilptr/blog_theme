@@ -1,0 +1,25 @@
+@include break-up($breakpoint-md) {
+  .cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 22.5rem;
+    height: 100%;
+  }
+  .main {
+    position: relative;
+    display: block;
+    margin: 0 0 0 22.5rem;
+  }
+}
+
+@include break-down($breakpoint-md) {
+  .cover,
+  .main {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
