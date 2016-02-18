@@ -36,3 +36,5 @@ gen
 
 # build
 build
+# bower
+bower_components
