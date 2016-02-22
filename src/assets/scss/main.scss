@@ -10,7 +10,14 @@
 
 @import "reboot";
 
+@import "utilities";
+
 /* base layout */
 @import "modules/layout";
 
 @import "modules/cover";
+
+@import "modules/pagination";
+@import "modules/posts";
+@import "modules/tags";
+@import "modules/footer";

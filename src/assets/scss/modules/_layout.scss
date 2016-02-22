@@ -12,6 +12,7 @@
     position: relative;
     display: block;
     margin: 0 0 0 22.5rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -21,5 +22,15 @@
     position: relative;
     display: block;
     width: 100%;
+  }
+
+  .main {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@include break-down($breakpoint-sm) {
+  .main {
+    padding: 1rem;
   }
 }

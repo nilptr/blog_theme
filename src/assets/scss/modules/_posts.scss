@@ -1,0 +1,44 @@
+.posts {
+  list-style: none;
+
+  a.post-link {
+    color: $gray-dark;
+    text-decoration: none;
+    transition: .3s;
+
+    &:link,
+    &:visited {
+      color: $gray-dark;
+    }
+
+    &:hover,
+    &:active {
+      color: $link-color;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+
+    p.excerpt {
+      margin-bottom: 1rem;
+      color: $gray-light;
+    }
+  }
+
+  .post-meta {
+    color: $gray-lighter;
+    font-size: .85rem;
+  }
+
+  hr.divider {
+    display: block;
+    width: 50%;
+    height: 0;
+    margin: 1.2rem 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+}

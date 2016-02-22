@@ -14,6 +14,7 @@
 
   // 链接样式
   a {
+    color: #fff;
     text-decoration: none;
     transition: .3s;
 
@@ -30,6 +31,7 @@
   // 分隔线
   hr.divider {
     display: block;
+    height: 0;
     margin: 10px auto;
     border: none;
     border-top: 1px solid rgba(255, 255, 255, .2);

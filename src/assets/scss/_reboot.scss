@@ -51,3 +51,25 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent;
 }
+
+hr {
+  height: 0;
+  border: none;
+}
+
+// default link
+a {
+  color: $body-color;
+  text-decoration: none;
+  transition: .3s;
+
+  &:link,
+  &:visited {
+    color: $body-color;
+  }
+
+  &:hover,
+  &:active {
+    color: $link-color;
+  }
+}

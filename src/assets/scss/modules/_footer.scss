@@ -1,0 +1,25 @@
+footer {
+  display: block;
+  width: 100%;
+  padding: 1em 0;
+  border: none;
+  border-top: 2px solid $gray-light;
+  color: $gray-light;
+  font-size: .8rem;
+  text-align: right;
+
+  a {
+    text-decoration: none;
+    transition: .3s;
+
+    &:link,
+    &:visited {
+      color: $gray;
+    }
+
+    &:hover,
+    &:active {
+      color: $link-color;
+    }
+  }
+}
