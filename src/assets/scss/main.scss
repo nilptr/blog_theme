@@ -17,7 +17,12 @@
 
 @import "modules/cover";
 
-@import "modules/pagination";
+// 列表页
 @import "modules/posts";
 @import "modules/tags";
+@import "modules/pagination";
 @import "modules/footer";
+
+// 文章页
+@import "modules/typography";
+@import "modules/prism";

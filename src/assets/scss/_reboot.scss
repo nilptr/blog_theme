@@ -1,35 +1,3 @@
-// reset the box-sizing to `border-box`
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-// reset html & body
-html {
-  // rem 16px
-  font-size: $font-size-root;
-}
-
-body {
-  font-family: $font-family-base;
-  font-size: 1rem;
-  line-height: $line-height;
-
-  color: $body-color;
-  background-color: $body-bg;
-
-  @if $enable-antialiase {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  } @else {
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
-  }
-}
-
 /* reset */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,9 +20,64 @@ time, mark, audio, video {
   background: transparent;
 }
 
+small,
+figcaption {
+  font-size: 0.9em;
+  color: $gray-light;
+}
+
+strong, b {
+  font-weight: bold;
+  color: $gray-dark;
+}
+
+del {
+  text-decoration: line-through;
+}
+
 hr {
   height: 0;
+  margin: 1rem auto;
   border: none;
+  border-top: 1px solid #eee;
+}
+
+// code
+// code fonts
+code,
+kbd,
+pre,
+samp  {
+  font-family: $font-family-monospace;
+}
+
+// inline code
+code {
+  padding: .2em .4em;
+  font-size: 90%;
+  color: $code-color;
+  background-color: $code-bg;
+  border-radius: .25em;
+}
+
+pre {
+  display: block;
+  padding: 1em 1.5em;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  background: #f8f8f8;
+  font-size: 90%;
+  line-height: $line-height;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
 }
 
 // default link
@@ -71,5 +94,37 @@ a {
   &:hover,
   &:active {
     color: $link-color;
+  }
+}
+
+// reset the box-sizing to `border-box`
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// reset html & body font & color
+html {
+  // rem 16px
+  font-size: $font-size-root;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: 1rem;
+  line-height: $line-height;
+
+  color: $body-color;
+  background-color: $body-bg;
+
+  @if $enable-antialiase {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
   }
 }

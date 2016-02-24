@@ -30,10 +30,7 @@
 
   // 分隔线
   hr.divider {
-    display: block;
-    height: 0;
     margin: 10px auto;
-    border: none;
     border-top: 1px solid rgba(255, 255, 255, .2);
     &.long {
       width: 30%;
@@ -139,6 +136,10 @@
     nav ul.links li {
       display: inline-block;
       margin: 0 0.5em;
+    }
+    // 边距调整
+    nav {
+      margin: .75rem 0;
     }
   }
 }

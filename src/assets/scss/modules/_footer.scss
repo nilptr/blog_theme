@@ -6,7 +6,12 @@ footer {
   border-top: 2px solid $gray-light;
   color: $gray-light;
   font-size: .8rem;
+  line-height: $line-height;
   text-align: right;
+
+  p {
+    margin: 0;
+  }
 
   a {
     text-decoration: none;

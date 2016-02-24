@@ -1,4 +1,5 @@
 .posts {
+  margin: 0;
   list-style: none;
 
   a.post-link {
@@ -28,17 +29,19 @@
     }
   }
 
-  .post-meta {
-    color: $gray-lighter;
-    font-size: .85rem;
-  }
-
   hr.divider {
-    display: block;
     width: 50%;
-    height: 0;
-    margin: 1.2rem 0;
-    border: none;
-    border-top: 1px solid #ddd;
+    margin: 1rem 0;
   }
+}
+
+.post-meta {
+  color: $gray-lighter;
+  font-size: .9rem;
+}
+
+.posts-related {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
 }

@@ -1,0 +1,79 @@
+.post-body {
+  // 段落及块间距
+  p, pre, ul, ol, dl, form, hr, table, blockquote {
+    margin-bottom: 1.2em
+  }
+
+  // 标题 margin 优化: 贴紧内容
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6em;
+    line-height: 1.35;
+  }
+
+  // 标题字体大小
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5, h6 {
+    font-size: 1.2em;
+  }
+
+  // 列表
+  ul {
+    margin-left: 1.3em;
+    list-style: disc;
+  }
+
+  ol {
+    margin-left: 1.9em;
+    list-style: decimal;
+  }
+
+  li ul,
+  li ol {
+    margin-bottom: 0.8em;
+    margin-left: 2em;
+  }
+
+  li ul,
+  ul ul,
+  ol ul {
+    list-style: circle;
+  }
+
+  // table 样式
+  table th, table td, .typo-table th, .typo-table td, table caption {
+    border: 1px solid #ddd;
+    padding: 0.5em 1em;
+    color: #666;
+  }
+
+  table th, .typo-table th {
+    background: #fbfbfb;
+  }
+
+  table thead th, .typo-table thead th {
+    background: #f1f1f1;
+  }
+
+  table caption {
+    border-bottom: none;
+  }
+}
+
+h1.post-title {
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+  font-size: 2rem;
+  text-align: center;
+}
