@@ -1,4 +1,8 @@
 .post-body {
+  img {
+    max-width: 100%;
+  }
+
   // 段落及块间距
   p, pre, ul, ol, dl, form, hr, table, blockquote {
     margin-bottom: 1.2em

@@ -6,7 +6,7 @@
   color: #fff;
   text-align: center;
 
-  background-image: url('../img/bg.jpg');
+  background-image: url('../images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -40,7 +40,7 @@
     }
   }
 
-  p {
+  .profile-description {
     margin: 0 2rem;
     font-weight: 500;
   }
@@ -53,6 +53,7 @@
   }
 
   a.avatar-link {
+    display: block;
     &:link,
     &:visited,
     &:hover,
@@ -115,7 +116,7 @@
 
     // 隐去文字
     hr.divider,
-    p {
+    p.profile-description {
       display: none;
     }
 

@@ -1,0 +1,12 @@
+{{!-- display post meta, work in a post context --}}
+<div class="post-meta">
+  {{date format="DD MMMM YYYY"}}
+  {{#if tags}}
+    on
+    <span class="tags">
+      {{#foreach tags}}
+        <a href="{{url}}" title="{{name}}">{{name}}</a>
+      {{/foreach}}
+    </span>
+  {{/if}}
+</div>

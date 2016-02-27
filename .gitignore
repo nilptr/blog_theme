@@ -35,6 +35,6 @@ out
 gen
 
 # build
-build
+release
 # bower
 bower_components

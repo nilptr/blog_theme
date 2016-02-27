@@ -1,0 +1,27 @@
+{
+  "name": "leo",
+  "description": "a theme for ghost",
+  "main": "",
+  "authors": [
+    "nilptr <nilptr.js@gmail.com>"
+  ],
+  "license": "XJBG",
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "prism": "^1.4.1",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}
