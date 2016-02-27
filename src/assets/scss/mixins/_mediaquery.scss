@@ -1,0 +1,23 @@
+@mixin break-up($min) {
+  @media screen and (min-width: $min + 1px) {
+    @content
+  }
+}
+
+@mixin break-down($max) {
+  @media screen and (max-width: $max) {
+    @content
+  }
+}
+
+@mixin break-between($min, $max) {
+  @media screen and (min-width: $min + 1px) and (max-width: $max) {
+    @content
+  }
+}
+
+@mixin print() {
+  @media print {
+    @content
+  }
+}

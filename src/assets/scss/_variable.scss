@@ -1,0 +1,43 @@
+// 字体抗锯齿
+$enable-antialiase: true;
+
+// ----------------------
+//    fonts
+// ----------------------
+//$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:     "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+$font-family-serif:          Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:      Consolas, Monaco,'Andale Mono', monospace;
+$font-family-base:           $font-family-sans-serif;
+
+$font-size-root: 16px;
+
+$line-height: 1.6;
+
+// -----------------------
+//   colors
+// -----------------------
+$gray-dark:                 #333 !default;
+$gray:                      #666 !default;
+$gray-light:                #999 !default;
+$gray-lighter:              #ccc !default;
+
+$body-bg: #fff;
+$body-color: $gray;
+
+// link
+$link-color: #559bd9;
+
+$primary-color: #4a86e8;
+$primary-color-darker: #0062ff;
+
+// code
+$code-color:                  #bd4147 !default;
+$code-bg:                     #f7f7f9 !default;
+
+// -----------------------
+//   breakpoints
+// -----------------------
+$breakpoint-sm: 480px;
+$breakpoint-md: 780px;
+$breakpoint-lg: 1024px;

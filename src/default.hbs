@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>{{meta_title}}</title>
+  <!-- todo: SEO -->
+
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{asset "css/main.css"}}">
+
+  <!--[if lte IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+
+  {{ghost_head}}
+</head>
+<body>
+<aside class="cover">
+  <div class="profile">
+    <a class="avatar-link" href="">
+      <img src="{{@blog.logo}}" alt="{{{@blog.title}}}">
+      {{#is "post, tag"}}
+        <h2 class="profile-title">{{@blog.title}}</h2>
+      {{else}}
+        <h1 class="profile-title">{{@blog.title}}</h1>
+      {{/is}}
+    </a>
+    <hr class="divider long">
+    <p class="profile-description">{{@blog.description}}</p>
+    <hr class="divider short">
+    {{!-- navigation here --}}
+    {{#if @blog.navigation}}
+      <nav>
+        <ul class="links">
+          {{#foreach @blog.navigation}}
+            <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+          {{/foreach}}
+        </ul>
+      </nav>
+    {{/if}}
+    <ul class="social-links">
+      <li><a href="https://github.com/nilptr"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://twitter.com/BlueNilptr"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="mailto:nilptr.js@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a href="{{@blog.url}}/rss"><i class="fa fa-rss"></i></a></li>
+    </ul>
+  </div>
+</aside>
+<main class="main" role="main">
+  <div class="content">
+    {{{body}}}
+
+    <footer>
+      <p>Copyright © 2013-2016 <a href="#">nilptr</a>. All rights reserved.</p>
+      <p>Powerd By <a href="http://ghost.org">Ghost</a> · <a href="#">Blog_theme</a></p>
+    </footer>
+  </div>
+</main>
+
+{{ghost_foot}}
+<script src="{{asset "js/prism.pack.js"}}"></script>
+</body>
+</html>

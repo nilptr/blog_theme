@@ -1,0 +1,16 @@
+{{!< default}}
+
+<h2></h2>
+<ol class="posts">
+  {{#foreach posts}}
+    <li>
+      <a class="post-link" href="{{url}}">
+        <h3>{{title}}</h3>
+        <p class="excerpt">{{excerpt}}</p>
+      </a>
+      {{> post/meta}}
+      <hr class="divider">
+    </li>
+  {{/foreach}}
+</ol>
+{{pagination}}

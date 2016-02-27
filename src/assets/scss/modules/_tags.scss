@@ -1,0 +1,28 @@
+/*
+ tag links
+*/
+.tags {
+  display: inline;
+
+  a {
+    padding: .2em .3em;
+    margin: 0 .2em;
+    border-radius: .25em;
+
+    text-decoration: none;
+
+    transition: .3s background-color;
+
+    &:link,
+    &:visited {
+      color: #fff;
+      background-color: $primary-color;
+    }
+
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: $primary-color-darker;
+    }
+  }
+}

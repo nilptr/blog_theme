@@ -1,0 +1,146 @@
+
+
+.cover {
+  display: flex;
+
+  color: #fff;
+  text-align: center;
+
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+  // 链接样式
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+    &:hover,
+    &:active {
+      color: $link-color;
+    }
+  }
+
+  // 分隔线
+  hr.divider {
+    margin: 10px auto;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    &.long {
+      width: 30%;
+    }
+    &.short {
+      width: 15%;
+    }
+  }
+
+  .profile-description {
+    margin: 0 2rem;
+    font-weight: 500;
+  }
+
+  // 居中容器
+  .profile {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  a.avatar-link {
+    display: block;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    img {
+      width: 7rem;
+      height: 7rem;
+      margin-bottom: .5rem;
+      border-radius: 50%;
+    }
+
+    .profile-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  nav {
+    display: block;
+    width: 100%;
+    margin: 1.4rem auto;
+
+    ul.links {
+      list-style: none;
+
+      a {
+        display: inline-block;
+        padding: .25em;
+      }
+    }
+  }
+
+  ul.social-links {
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 .5em;
+      font-size: 1.2rem;
+
+      transition: .5s;
+
+      &:hover {
+        transform: rotate(5deg) scale(1.25);
+      }
+    }
+  }
+
+  @include break-down($breakpoint-md) {
+    // 调整容器上下边距
+    .profile {
+      margin: 1rem auto;
+    }
+
+    // 隐去文字
+    hr.divider,
+    p.profile-description {
+      display: none;
+    }
+
+    a.avatar-link {
+      img {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 0;
+      }
+
+      // 隐去
+      .profile-title {
+        display: none;
+      }
+    }
+
+    // 横向排列导航
+    nav ul.links li {
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+    // 边距调整
+    nav {
+      margin: .75rem 0;
+    }
+  }
+}
