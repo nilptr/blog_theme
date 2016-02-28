@@ -57,9 +57,14 @@ gulp.task('prism', ['bower'], function () {
     .pipe(gulp.dest('release/assets/js'));
 });
 
+gulp.task('fontawesome', ['bower'], function () {
+  return gulp.src('bower_components/font-awesome/**/*{.min.css,.map,otf,eot,svg,ttf,woff,woff2}')
+    .pipe(gulp.dest('release/assets'));
+});
+
 gulp.task('package', function () {
   return gulp.src('package.json')
     .pipe(gulp.dest('release'));
 });
 
-gulp.task('default', ['sass', 'copy', 'prism', 'package']);
+gulp.task('default', ['sass', 'copy', 'prism', 'fontawesome', 'package']);
