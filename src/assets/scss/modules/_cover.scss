@@ -6,11 +6,8 @@
   color: #fff;
   text-align: center;
 
-  background-image: url('../images/bg.jpg');
-  background-repeat: no-repeat;
+  background: url('../images/bg.jpg') no-repeat fixed;
   background-size: cover;
-  background-attachment: fixed;
-
 
   // 链接样式
   a {
