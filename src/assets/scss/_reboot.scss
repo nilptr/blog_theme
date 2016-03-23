@@ -82,18 +82,18 @@ pre {
 
 // default link
 a {
-  color: $body-color;
+  color: $link-color;
   text-decoration: none;
   transition: .3s;
 
   &:link,
   &:visited {
-    color: $body-color;
+    color: $link-color;
   }
 
   &:hover,
   &:active {
-    color: $link-color;
+    color: darken($link-color, 15%);
   }
 }
 
