@@ -16,6 +16,12 @@
   }
 }
 
+@include break-up($breakpoint-lg) {
+  .main {
+    padding: 2rem 5rem;
+  }
+}
+
 @include break-down($breakpoint-md) {
   .cover,
   .main {
