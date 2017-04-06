@@ -15,6 +15,7 @@
 /* base layout */
 @import "modules/layout";
 
+/* 左侧 cover */
 @import "modules/cover";
 
 // 列表页
@@ -23,7 +24,7 @@
 @import "modules/pagination";
 @import "modules/footer";
 
-// 文章页
+// 文章页 文章排版
 @import "modules/typography";
 
 // prism 主题

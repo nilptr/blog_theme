@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var csso = require('gulp-csso');
-var bower = require('gulp-bower');
 var banner = require('gulp-banner');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -18,7 +17,7 @@ var prism = [
   'javascript', 'json', 'jsx',
   'php', 'python'
 ].map(function (lang) {
-  return 'bower_components/prism/components/prism-' + lang + '.js';
+  return 'node_modules/prismjs/components/prism-' + lang + '.js';
 });
 
 var comment = [
@@ -32,10 +31,6 @@ var comment = [
   ' */\n'
 ].join('\n');
 
-gulp.task('bower', function () {
-  return bower();
-});
-
 gulp.task('sass', function () {
   return gulp.src('src/assets/scss/*.scss')
     .pipe(sass())
@@ -46,20 +41,15 @@ gulp.task('sass', function () {
 });
 
 gulp.task('copy', function () {
-  return gulp.src('src/**/*.{hbs,jpg,svg}')
+  return gulp.src('src/**/*.{hbs,jpg,jpeg,png,svg}')
     .pipe(gulp.dest('release'));
 });
 
-gulp.task('prism', ['bower'], function () {
+gulp.task('prism', function () {
   return gulp.src(prism)
     .pipe(concat('prism.pack.js'))
     .pipe(uglify())
     .pipe(gulp.dest('release/assets/js'));
-});
-
-gulp.task('fontawesome', ['bower'], function () {
-  return gulp.src('bower_components/font-awesome/**/*{.min.css,.map,otf,eot,svg,ttf,woff,woff2}')
-    .pipe(gulp.dest('release/assets'));
 });
 
 gulp.task('package', function () {
@@ -67,4 +57,4 @@ gulp.task('package', function () {
     .pipe(gulp.dest('release'));
 });
 
-gulp.task('default', ['sass', 'copy', 'prism', 'fontawesome', 'package']);
+gulp.task('default', ['sass', 'copy', 'prism', 'package']);

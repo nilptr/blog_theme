@@ -27,8 +27,11 @@
   h4 {
     font-size: 1.4em;
   }
-  h5, h6 {
+  h5 {
     font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1.1em;
   }
 
   // 列表
@@ -71,6 +74,26 @@
 
   table caption {
     border-bottom: none;
+  }
+
+  // 引用块
+  blockquote {
+    position: relative;
+    border-left: 3px solid #3eb0ef;
+    background-color: #f6f8fa;
+    padding: .75em 1em;
+    margin: 1em .5em;
+
+    @include break-down($breakpoint-md) {
+      margin: 1em 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -7,7 +7,7 @@
   color: #fff;
   text-align: center;
 
-  background: url('../images/bg.jpg') no-repeat fixed;
+  background-repeat: no-repeat;
   background-size: cover;
 
   // 链接样式
@@ -51,7 +51,7 @@
   }
 
   a.avatar-link {
-    display: block;
+    display: inline-block;
     &:link,
     &:visited,
     &:hover,
